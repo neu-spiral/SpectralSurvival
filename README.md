@@ -30,7 +30,7 @@ The repository implements:
 - **Medical Datasets**: METABRIC, SUPPORT, WHAS, BraTS2020
 - **Synthetic Datasets**: Simulated survival data with configurable parameters
 - **MovieLens**: Recommendation data adapted for survival analysis
-- **High-dimensional Datasets**: DLBCL, lung cancer datasets
+- **High-dimensional Datasets**: LUNG1, DLBCL, VDV
 
 ## 🛠️ Installation
 
@@ -52,8 +52,8 @@ pip install deepsurvk lassonet wandb
 ### Running the Spectral Algorithm
 
 ```bash
-# Run spectral algorithm on METABRIC dataset
-python main.py --dataset metabric --algorithm spectral --learning_rate 0.01 --epochs 200
+# Run spectral algorithm on DLBCL dataset
+python main.py --dataset DLBCL --algorithm spectral --learning_rate 0.01 --epochs 200
 
 # Run with ResNet architecture
 python main.py --dataset DLBCL --algorithm spectral --ResNet --depth 3 --epochs 100
@@ -63,10 +63,10 @@ python main.py --dataset DLBCL --algorithm spectral --ResNet --depth 3 --epochs 
 
 ```bash
 # Run DeepSurv baseline
-python main.py --dataset metabric --algorithm deepsurv --learning_rate 0.01
+python main.py --dataset DLBCL --algorithm deepsurv --learning_rate 0.01
 
 # Run all baseline methods
-python main.py --dataset support --algorithm baseline --epochs 150
+python main.py --dataset DLBCL --algorithm baseline --epochs 150
 ```
 
 ### MovieLens Experiments
