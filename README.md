@@ -27,10 +27,9 @@ The repository implements:
 
 ## 📊 Supported Datasets
 
-- **Medical Datasets**: METABRIC, SUPPORT, WHAS, BraTS2020
-- **Synthetic Datasets**: Simulated survival data with configurable parameters
-- **MovieLens**: Recommendation data adapted for survival analysis
-- **High-dimensional Datasets**: LUNG1, DLBCL, VDV
+- **Medical Datasets**: LUNG1, DLBCL, VDV
+- **Synthetic Datasets**: Simulated survival data with advertisements (ADS100, ADS1K, ADS10K)
+- **Movie Rating Dataset**: MovieLens adapted to the survival analysis setting
 
 ## 🛠️ Installation
 
