@@ -35,8 +35,7 @@ The repository implements:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/KDD_Spectral_Survival_Analysis.git
-cd KDD_Spectral_Survival_Analysis
+git clone git@github.com:neu-spiral/SpectralSurvival.git
 ```
 
 2. Install dependencies:
