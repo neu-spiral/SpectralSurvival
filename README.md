@@ -81,7 +81,7 @@ python main_movie.py --dataset MovieLens100k --algorithm deepsurv --batch_size_c
 ## 📋 Command Line Arguments
 
 ### Main Arguments
-- `--dataset`: Dataset name (metabric, support, whas, DLBCL, MovieLens100k, etc.)
+- `--dataset`: Dataset name (VDV, DLBCL, MovieLens100k, etc.)
 - `--algorithm`: Algorithm to run (spectral, deepsurv, deephit, mtlr, coxcc, fastcph, coxtime, baseline)
 - `--learning_rate`: Learning rate (default: 0.01)
 - `--epochs`: Number of training epochs (default: 200)
