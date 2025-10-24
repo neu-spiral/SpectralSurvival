@@ -145,25 +145,6 @@ def batched_predict(model, x_train, batch_size=None, predict_function=False):
 
 def sksurv_metrics(model, x_train, y_train, x_test, y_test, predict_function=False, use_exp=True, eps=1e-3, n_band_split=20, plot=False, model_name = "Default"):
     model.trainable=False
-        # Check if inputs are torch tensors, and convert them to NumPy arrays if necessary
-    
-    if len(x_train) > 1000:
-        x_train = x_train[:1000]
-        if len(y_train) == 2:
-            Y_train, E_train = y_train
-            y_train = (Y_train[:1000], E_train[:1000])
-        elif len(y_train) == 3:
-            Y_train, E_train, J_train = y_train
-            y_train = (Y_train[:1000], E_train[:1000], J_train[:1000])
-
-    if len(x_test) > 1000:
-        x_test = x_test[:1000]
-        if len(y_test) == 2:
-            Y_test, E_test = y_test
-            y_test = (Y_test[:1000], E_test[:1000])
-        elif len(y_test) == 3:
-            Y_test, E_test, J_test = y_test
-            y_test = (Y_test[:1000], E_test[:1000], J_test[:1000])
             
     if len(y_train)==2:
         Y_train, E_train = y_train
